@@ -26,7 +26,7 @@
 
 @implementation IKURLConnection
 
-@synthesize request = _request, response = _response, data = _data, userInfo = _userInfo;
+@synthesize request = _request, response = _response, data = _data, userInfo = _userInfo, type = _type;
 
 - (id)initWithRequest:(NSURLRequest *)request delegate:(id)delegate startImmediately:(BOOL)startImmediately
 {
@@ -36,8 +36,8 @@
         _response = nil;
         _data     = [[NSMutableData alloc] init];
         _userInfo = nil;
+        _type     = IKURLConnectionTypeUnknown;
         
-        _type    = IKURLConnectionTypeUnknown;
         _context = nil;
     }
     return self;
@@ -95,11 +95,6 @@
     if (_type != type) {
         _type = type;
     }
-}
-
-- (IKURLConnectionType)_type
-{
-    return _type;
 }
 
 - (void)_setContext:(id)context

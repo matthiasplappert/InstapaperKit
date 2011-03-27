@@ -24,30 +24,6 @@
 #import "IKURLConnection.h"
 
 
-typedef enum {
-    IKURLConnectionTypeUnknown = -1,
-    
-    IKURLConnectionTypeAuthAccessToken,
-    IKURLConnectionTypeAuthVerifyCredentials,
-    
-    IKURLConnectionTypeBookmarksList,
-    IKURLConnectionTypeBookmarksUpdateReadProgress,
-    IKURLConnectionTypeBookmarksAdd,
-    IKURLConnectionTypeBookmarksDelete,
-    IKURLConnectionTypeBookmarksStar,
-    IKURLConnectionTypeBookmarksUnstar,
-    IKURLConnectionTypeBookmarksArchive,
-    IKURLConnectionTypeBookmarksUnarchive,
-    IKURLConnectionTypeBookmarksMove,
-    IKURLConnectionTypeBookmarksText,
-    
-    IKURLConnectionTypeFoldersList,
-    IKURLConnectionTypeFoldersAdd,
-    IKURLConnectionTypeFoldersDelete,
-    IKURLConnectionTypeFoldersOrder
-} IKURLConnectionType;
-
-
 @interface IKURLConnection (Private)
 
 - (void)_appendData:(NSData *)data;
@@ -55,7 +31,6 @@ typedef enum {
 - (void)_setResponse:(NSHTTPURLResponse *)response;
 
 - (void)_setType:(IKURLConnectionType)type;
-- (IKURLConnectionType)_type;
 - (void)_setContext:(id)context;
 - (id)_context;
 

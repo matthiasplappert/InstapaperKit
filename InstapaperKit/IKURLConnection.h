@@ -23,13 +23,37 @@
 #import <Foundation/Foundation.h>
 
 
+typedef enum {
+    IKURLConnectionTypeUnknown = -1,
+    
+    IKURLConnectionTypeAuthAccessToken,
+    IKURLConnectionTypeAuthVerifyCredentials,
+    
+    IKURLConnectionTypeBookmarksList,
+    IKURLConnectionTypeBookmarksUpdateReadProgress,
+    IKURLConnectionTypeBookmarksAdd,
+    IKURLConnectionTypeBookmarksDelete,
+    IKURLConnectionTypeBookmarksStar,
+    IKURLConnectionTypeBookmarksUnstar,
+    IKURLConnectionTypeBookmarksArchive,
+    IKURLConnectionTypeBookmarksUnarchive,
+    IKURLConnectionTypeBookmarksMove,
+    IKURLConnectionTypeBookmarksText,
+    
+    IKURLConnectionTypeFoldersList,
+    IKURLConnectionTypeFoldersAdd,
+    IKURLConnectionTypeFoldersDelete,
+    IKURLConnectionTypeFoldersOrder
+} IKURLConnectionType;
+
+
 @interface IKURLConnection : NSURLConnection {
     NSURLRequest *_request;
     NSHTTPURLResponse *_response;
     NSMutableData *_data;
     id _userInfo;
+    IKURLConnectionType _type;
     
-    NSInteger _type;
     id _context;
 }
 
@@ -37,5 +61,6 @@
 @property (nonatomic, readonly) NSHTTPURLResponse *response;
 @property (nonatomic, readonly) NSData *data;
 @property (nonatomic, readonly) id userInfo;
+@property (nonatomic, readonly) IKURLConnectionType type;
 
 @end
