@@ -421,9 +421,6 @@ static NSString *_OAuthConsumerSecret = nil;
                                                  code:NSURLErrorBadServerResponse
                                              userInfo:nil];
     
-    // TODO: remove
-    NSLog(@"%d: %@", (int)connection.response.statusCode, responseString);
-    
     IKURLConnectionType type = [connection _type];
     if (type == IKURLConnectionTypeAuthAccessToken) {
         NSInteger statusCode = connection.response.statusCode;
