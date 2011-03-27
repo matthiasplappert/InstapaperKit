@@ -10,6 +10,7 @@ the MIT license.
 InstapaperKit uses a git submodule. To get the source code and the submodule, do the following:
 
     git clone git://github.com/matthiasplappert/InstapaperKit.git /some/path/InstapaperKit
+    cd /some/path/InstapaperKit/
     git submodule update --init --recursive
 
 The easiest way to use InstapaperKit is top add all classes from the Xcode *InstapaperKit* group to
