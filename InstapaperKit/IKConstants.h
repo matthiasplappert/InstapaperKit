@@ -48,6 +48,7 @@ enum {
     IKErrorCodeUnexpectedBookmarkError        = 1250,
     
     // Folder errors
+    // TODO: fix duplicate 1250 error code (waiting for a response from Marco)
     IKErrorCodeInvalidTitle        = 1250,
     IKErrorCodeFolderAlreadyExists = 1251,
     IKErrorCodeCannotAddBookmark   = 1252,
