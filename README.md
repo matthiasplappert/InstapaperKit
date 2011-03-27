@@ -35,7 +35,7 @@ before you can use it.
 
 ### Providing an OAuth Consumer Key and Secret
 
-Start by setting your OAuth consumer key and secret. If you donÕt have those yet, you have to [request
+Start by setting your OAuth consumer key and secret. If you donâ€™t have those yet, you have to [request
 them](http://www.instapaper.com/main/request_oauth_consumer_token).
 
     [IKEngine setOAuthConsumerKey:@"your application's consumer key"
@@ -48,15 +48,15 @@ Make sure that you keep your OAuth consumer secret, well, secret!
 
 ### Requesting an OAuth Token and Secret
 
-xAuth (just like OAuth) doesnÕt authenticate users by their username and password but a token and
-secret. You therefore should **never** store a userÕs password but only the token and secret. You
+xAuth (just like OAuth) doesnâ€™t authenticate users by their username and password but a token and
+secret. You therefore should **never** store a userâ€™s password but only the token and secret. You
 typically request a token as soon as the user enters his username and password.
 
     // Assuming that your class has an instance variable _engine
     _engine = [[IKEngine alloc] initWithDelegate:self];
     [_engine authTokenForUsername:@"Instapaper username" password:@"shh, this is secret!"];
 
-Once the request is complete, your delegateÕs `engine:connection:didReceiveAuthToken:andTokenSecret:`
+Once the request is complete, your delegateâ€™s `engine:connection:didReceiveAuthToken:andTokenSecret:`
 method will get called:
 
     - (void)engine:(IKEngine *)engine connection:(IKURLConnection *)connection didReceiveAuthToken:(NSString *)token andTokenSecret:(NSString *)secret
@@ -68,7 +68,7 @@ method will get called:
         // Save token and secret in keychain (do not use NSUserDefaults for the secret!)
     }
 
-Make sure to store your token and secret, you donÕt want to request the token and secret every time
+Make sure to store your token and secret, you donâ€™t want to request the token and secret every time
 the application starts. Also make sure to store the secret in a safe place like the keychain.
 
 
@@ -80,7 +80,7 @@ uses asynchronous connections, it makes heavy use of `IKEngineDelegate`.
 `IKEngineDelegate` defines 4 general methods: `engine:willStartConnection:`, `engine:didFinishConnection:`,
 `engine:didFailConnection:error:`, and `engine:didCancelConnection:`. Those methods get called every
 time a connection starts, finishes, fails or is cancelled. You can use `IKURLConnection`s `type`
-property to figure out which type of connection youÕre dealing with.
+property to figure out which type of connection youâ€™re dealing with.
 
 `IKEngineDelegate` also defines a couple of delegate method which gets called on a successful request.
 Those methods pass the parsed return value of the respective request. Please note that the
