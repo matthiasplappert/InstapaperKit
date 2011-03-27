@@ -1,0 +1,3 @@
+[submodule "InstapaperKit/Third Party/JSONKit"]
+	path = InstapaperKit/Third Party/JSONKit
+	url = git://github.com/johnezang/JSONKit.git

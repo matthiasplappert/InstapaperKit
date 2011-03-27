@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C209258133F8E1500561607 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C20923E133F8E1500561607 /* JSONKit.h */; };
+		8C209259133F8E1500561607 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20923F133F8E1500561607 /* JSONKit.m */; };
+		8C880B1D1333BC1600834805 /* IKURLConnection+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C880B1B1333BC1400834805 /* IKURLConnection+Private.h */; };
+		8CBA8F6B132C26790086AA8F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBA8F6A132C26790086AA8F /* Cocoa.framework */; };
+		8CBA8F75132C26790086AA8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CBA8F73132C26790086AA8F /* InfoPlist.strings */; };
+		8CBA8F80132C26880086AA8F /* IKURLConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CBA8F7C132C26880086AA8F /* IKURLConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CBA8F81132C26880086AA8F /* IKURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA8F7D132C26880086AA8F /* IKURLConnection.m */; };
+		8CBA8F82132C26880086AA8F /* IKEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CBA8F7E132C26880086AA8F /* IKEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CBA8F83132C26880086AA8F /* IKEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA8F7F132C26880086AA8F /* IKEngine.m */; };
+		8CCBC67E132CC419009528C3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBA8F6A132C26790086AA8F /* Cocoa.framework */; };
+		8CCBC684132CC419009528C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CCBC682132CC419009528C3 /* InfoPlist.strings */; };
+		8CCBC687132CC419009528C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBC686132CC419009528C3 /* main.m */; };
+		8CCBC68A132CC419009528C3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8CCBC688132CC419009528C3 /* Credits.rtf */; };
+		8CCBC68D132CC419009528C3 /* TestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBC68C132CC419009528C3 /* TestAppDelegate.m */; };
+		8CCBC690132CC419009528C3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CCBC68E132CC419009528C3 /* MainMenu.xib */; };
+		8CCBC696132CC4AC009528C3 /* InstapaperKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC695132CC4AC009528C3 /* InstapaperKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CCBC697132CC4D6009528C3 /* InstapaperKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBA8F67132C26790086AA8F /* InstapaperKit.framework */; };
+		8CCBC699132CC52E009528C3 /* InstapaperKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBA8F67132C26790086AA8F /* InstapaperKit.framework */; };
+		8CCBC6A5132CE7EA009528C3 /* NSString+IKEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC6A3132CE7E9009528C3 /* NSString+IKEncoding.h */; };
+		8CCBC6A6132CE7EA009528C3 /* NSString+IKEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBC6A4132CE7E9009528C3 /* NSString+IKEncoding.m */; };
+		8CCBC6AB132CF2E0009528C3 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC6A9132CF2E0009528C3 /* NSData+Base64.h */; };
+		8CCBC6AC132CF2E0009528C3 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBC6AA132CF2E0009528C3 /* NSData+Base64.m */; };
+		8CCBC6D7132CF3DE009528C3 /* IKUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC6D5132CF3DD009528C3 /* IKUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CCBC6D8132CF3DE009528C3 /* IKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBC6D6132CF3DD009528C3 /* IKUser.m */; };
+		8CCBC6DB132CF4F7009528C3 /* IKDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC6D9132CF4F7009528C3 /* IKDeserializer.h */; };
+		8CCBC6DC132CF4F7009528C3 /* IKDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBC6DA132CF4F7009528C3 /* IKDeserializer.m */; };
+		8CCBC6E0132CFA85009528C3 /* IKBookmark.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC6DE132CFA84009528C3 /* IKBookmark.h */; };
+		8CCBC6E1132CFA85009528C3 /* IKBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBC6DF132CFA84009528C3 /* IKBookmark.m */; };
+		8CCBC6E4132CFA8D009528C3 /* IKFolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC6E2132CFA8D009528C3 /* IKFolder.h */; };
+		8CCBC6E5132CFA8D009528C3 /* IKFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBC6E3132CFA8D009528C3 /* IKFolder.m */; };
+		8CCBC6EE132CFE02009528C3 /* IKConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC6EC132CFE00009528C3 /* IKConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CCBC6EF132CFE02009528C3 /* IKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBC6ED132CFE01009528C3 /* IKConstants.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8CCBC698132CC51E009528C3 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8CCBC699132CC52E009528C3 /* InstapaperKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8C20923E133F8E1500561607 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		8C20923F133F8E1500561607 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		8C880B1B1333BC1400834805 /* IKURLConnection+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IKURLConnection+Private.h"; sourceTree = "<group>"; };
+		8CBA8F67132C26790086AA8F /* InstapaperKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InstapaperKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CBA8F6A132C26790086AA8F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8CBA8F6D132C26790086AA8F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8CBA8F6E132C26790086AA8F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8CBA8F6F132C26790086AA8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8CBA8F72132C26790086AA8F /* InstapaperKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstapaperKit-Info.plist"; sourceTree = "<group>"; };
+		8CBA8F74132C26790086AA8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8CBA8F76132C26790086AA8F /* InstapaperKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstapaperKit-Prefix.pch"; sourceTree = "<group>"; };
+		8CBA8F7C132C26880086AA8F /* IKURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKURLConnection.h; sourceTree = "<group>"; };
+		8CBA8F7D132C26880086AA8F /* IKURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKURLConnection.m; sourceTree = "<group>"; };
+		8CBA8F7E132C26880086AA8F /* IKEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKEngine.h; sourceTree = "<group>"; };
+		8CBA8F7F132C26880086AA8F /* IKEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKEngine.m; sourceTree = "<group>"; };
+		8CCBC67C132CC419009528C3 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CCBC681132CC419009528C3 /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
+		8CCBC683132CC419009528C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8CCBC685132CC419009528C3 /* Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test-Prefix.pch"; sourceTree = "<group>"; };
+		8CCBC686132CC419009528C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CCBC689132CC419009528C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		8CCBC68B132CC419009528C3 /* TestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAppDelegate.h; sourceTree = "<group>"; };
+		8CCBC68C132CC419009528C3 /* TestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAppDelegate.m; sourceTree = "<group>"; };
+		8CCBC68F132CC419009528C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8CCBC695132CC4AC009528C3 /* InstapaperKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstapaperKit.h; sourceTree = "<group>"; };
+		8CCBC6A3132CE7E9009528C3 /* NSString+IKEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IKEncoding.h"; sourceTree = "<group>"; };
+		8CCBC6A4132CE7E9009528C3 /* NSString+IKEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IKEncoding.m"; sourceTree = "<group>"; };
+		8CCBC6A9132CF2E0009528C3 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		8CCBC6AA132CF2E0009528C3 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		8CCBC6D5132CF3DD009528C3 /* IKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKUser.h; sourceTree = "<group>"; };
+		8CCBC6D6132CF3DD009528C3 /* IKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKUser.m; sourceTree = "<group>"; };
+		8CCBC6D9132CF4F7009528C3 /* IKDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKDeserializer.h; sourceTree = "<group>"; };
+		8CCBC6DA132CF4F7009528C3 /* IKDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKDeserializer.m; sourceTree = "<group>"; };
+		8CCBC6DE132CFA84009528C3 /* IKBookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKBookmark.h; sourceTree = "<group>"; };
+		8CCBC6DF132CFA84009528C3 /* IKBookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKBookmark.m; sourceTree = "<group>"; };
+		8CCBC6E2132CFA8D009528C3 /* IKFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKFolder.h; sourceTree = "<group>"; };
+		8CCBC6E3132CFA8D009528C3 /* IKFolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKFolder.m; sourceTree = "<group>"; };
+		8CCBC6EC132CFE00009528C3 /* IKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKConstants.h; sourceTree = "<group>"; };
+		8CCBC6ED132CFE01009528C3 /* IKConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKConstants.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CBA8F63132C26790086AA8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CBA8F6B132C26790086AA8F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CCBC679132CC419009528C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCBC697132CC4D6009528C3 /* InstapaperKit.framework in Frameworks */,
+				8CCBC67E132CC419009528C3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C209217133F8E1500561607 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				8C20923E133F8E1500561607 /* JSONKit.h */,
+				8C20923F133F8E1500561607 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		8CBA8F5B132C26790086AA8F = {
+			isa = PBXGroup;
+			children = (
+				8CBA8F70132C26790086AA8F /* InstapaperKit */,
+				8CCBC67F132CC419009528C3 /* Test */,
+				8CBA8F69132C26790086AA8F /* Frameworks */,
+				8CBA8F68132C26790086AA8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CBA8F68132C26790086AA8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CCBC67C132CC419009528C3 /* Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CBA8F69132C26790086AA8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CBA8F67132C26790086AA8F /* InstapaperKit.framework */,
+				8CBA8F6A132C26790086AA8F /* Cocoa.framework */,
+				8CBA8F6C132C26790086AA8F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CBA8F6C132C26790086AA8F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CBA8F6D132C26790086AA8F /* AppKit.framework */,
+				8CBA8F6E132C26790086AA8F /* CoreData.framework */,
+				8CBA8F6F132C26790086AA8F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		8CBA8F70132C26790086AA8F /* InstapaperKit */ = {
+			isa = PBXGroup;
+			children = (
+				8CCBC695132CC4AC009528C3 /* InstapaperKit.h */,
+				8CCBC6EC132CFE00009528C3 /* IKConstants.h */,
+				8CCBC6ED132CFE01009528C3 /* IKConstants.m */,
+				8CBA8F7C132C26880086AA8F /* IKURLConnection.h */,
+				8CBA8F7D132C26880086AA8F /* IKURLConnection.m */,
+				8CBA8F7E132C26880086AA8F /* IKEngine.h */,
+				8CBA8F7F132C26880086AA8F /* IKEngine.m */,
+				8CCBC6DD132CFA67009528C3 /* Models */,
+				8CCBC6D4132CF362009528C3 /* Private */,
+				8CCBC6A7132CF2E0009528C3 /* Third Party */,
+				8CBA8F71132C26790086AA8F /* Supporting Files */,
+			);
+			path = InstapaperKit;
+			sourceTree = "<group>";
+		};
+		8CBA8F71132C26790086AA8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CBA8F72132C26790086AA8F /* InstapaperKit-Info.plist */,
+				8CBA8F73132C26790086AA8F /* InfoPlist.strings */,
+				8CBA8F76132C26790086AA8F /* InstapaperKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CCBC67F132CC419009528C3 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				8CCBC68B132CC419009528C3 /* TestAppDelegate.h */,
+				8CCBC68C132CC419009528C3 /* TestAppDelegate.m */,
+				8CCBC68E132CC419009528C3 /* MainMenu.xib */,
+				8CCBC680132CC419009528C3 /* Supporting Files */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		8CCBC680132CC419009528C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CCBC681132CC419009528C3 /* Test-Info.plist */,
+				8CCBC682132CC419009528C3 /* InfoPlist.strings */,
+				8CCBC685132CC419009528C3 /* Test-Prefix.pch */,
+				8CCBC686132CC419009528C3 /* main.m */,
+				8CCBC688132CC419009528C3 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CCBC6A7132CF2E0009528C3 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				8C209217133F8E1500561607 /* JSONKit */,
+				8CCBC6A8132CF2E0009528C3 /* Base64 */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
+		8CCBC6A8132CF2E0009528C3 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				8CCBC6A9132CF2E0009528C3 /* NSData+Base64.h */,
+				8CCBC6AA132CF2E0009528C3 /* NSData+Base64.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		8CCBC6D4132CF362009528C3 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				8CCBC6A3132CE7E9009528C3 /* NSString+IKEncoding.h */,
+				8CCBC6A4132CE7E9009528C3 /* NSString+IKEncoding.m */,
+				8CCBC6D9132CF4F7009528C3 /* IKDeserializer.h */,
+				8CCBC6DA132CF4F7009528C3 /* IKDeserializer.m */,
+				8C880B1B1333BC1400834805 /* IKURLConnection+Private.h */,
+			);
+			name = Private;
+			sourceTree = "<group>";
+		};
+		8CCBC6DD132CFA67009528C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8CCBC6D5132CF3DD009528C3 /* IKUser.h */,
+				8CCBC6D6132CF3DD009528C3 /* IKUser.m */,
+				8CCBC6DE132CFA84009528C3 /* IKBookmark.h */,
+				8CCBC6DF132CFA84009528C3 /* IKBookmark.m */,
+				8CCBC6E2132CFA8D009528C3 /* IKFolder.h */,
+				8CCBC6E3132CFA8D009528C3 /* IKFolder.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8CBA8F64132C26790086AA8F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CBA8F80132C26880086AA8F /* IKURLConnection.h in Headers */,
+				8CBA8F82132C26880086AA8F /* IKEngine.h in Headers */,
+				8CCBC696132CC4AC009528C3 /* InstapaperKit.h in Headers */,
+				8CCBC6A5132CE7EA009528C3 /* NSString+IKEncoding.h in Headers */,
+				8CCBC6AB132CF2E0009528C3 /* NSData+Base64.h in Headers */,
+				8CCBC6D7132CF3DE009528C3 /* IKUser.h in Headers */,
+				8CCBC6DB132CF4F7009528C3 /* IKDeserializer.h in Headers */,
+				8CCBC6E0132CFA85009528C3 /* IKBookmark.h in Headers */,
+				8CCBC6E4132CFA8D009528C3 /* IKFolder.h in Headers */,
+				8CCBC6EE132CFE02009528C3 /* IKConstants.h in Headers */,
+				8C880B1D1333BC1600834805 /* IKURLConnection+Private.h in Headers */,
+				8C209258133F8E1500561607 /* JSONKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8CBA8F66132C26790086AA8F /* InstapaperKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CBA8F79132C26790086AA8F /* Build configuration list for PBXNativeTarget "InstapaperKit" */;
+			buildPhases = (
+				8CBA8F62132C26790086AA8F /* Sources */,
+				8CBA8F63132C26790086AA8F /* Frameworks */,
+				8CBA8F64132C26790086AA8F /* Headers */,
+				8CBA8F65132C26790086AA8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstapaperKit;
+			productName = InstapaperKit;
+			productReference = 8CBA8F67132C26790086AA8F /* InstapaperKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8CCBC67B132CC419009528C3 /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CCBC693132CC419009528C3 /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				8CCBC678132CC419009528C3 /* Sources */,
+				8CCBC679132CC419009528C3 /* Frameworks */,
+				8CCBC67A132CC419009528C3 /* Resources */,
+				8CCBC698132CC51E009528C3 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Test;
+			productName = Test;
+			productReference = 8CCBC67C132CC419009528C3 /* Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CBA8F5D132C26790086AA8F /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 8CBA8F60132C26790086AA8F /* Build configuration list for PBXProject "InstapaperKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8CBA8F5B132C26790086AA8F;
+			productRefGroup = 8CBA8F68132C26790086AA8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CBA8F66132C26790086AA8F /* InstapaperKit */,
+				8CCBC67B132CC419009528C3 /* Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CBA8F65132C26790086AA8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CBA8F75132C26790086AA8F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CCBC67A132CC419009528C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCBC684132CC419009528C3 /* InfoPlist.strings in Resources */,
+				8CCBC68A132CC419009528C3 /* Credits.rtf in Resources */,
+				8CCBC690132CC419009528C3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CBA8F62132C26790086AA8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CBA8F81132C26880086AA8F /* IKURLConnection.m in Sources */,
+				8CBA8F83132C26880086AA8F /* IKEngine.m in Sources */,
+				8CCBC6A6132CE7EA009528C3 /* NSString+IKEncoding.m in Sources */,
+				8CCBC6AC132CF2E0009528C3 /* NSData+Base64.m in Sources */,
+				8CCBC6D8132CF3DE009528C3 /* IKUser.m in Sources */,
+				8CCBC6DC132CF4F7009528C3 /* IKDeserializer.m in Sources */,
+				8CCBC6E1132CFA85009528C3 /* IKBookmark.m in Sources */,
+				8CCBC6E5132CFA8D009528C3 /* IKFolder.m in Sources */,
+				8CCBC6EF132CFE02009528C3 /* IKConstants.m in Sources */,
+				8C209259133F8E1500561607 /* JSONKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CCBC678132CC419009528C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCBC687132CC419009528C3 /* main.m in Sources */,
+				8CCBC68D132CC419009528C3 /* TestAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8CBA8F73132C26790086AA8F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CBA8F74132C26790086AA8F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8CCBC682132CC419009528C3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CCBC683132CC419009528C3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8CCBC688132CC419009528C3 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CCBC689132CC419009528C3 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		8CCBC68E132CC419009528C3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CCBC68F132CC419009528C3 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CBA8F77132C26790086AA8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8CBA8F78132C26790086AA8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8CBA8F7A132C26790086AA8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstapaperKit/InstapaperKit-Prefix.pch";
+				INFOPLIST_FILE = "InstapaperKit/InstapaperKit-Info.plist";
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		8CBA8F7B132C26790086AA8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstapaperKit/InstapaperKit-Prefix.pch";
+				INFOPLIST_FILE = "InstapaperKit/InstapaperKit-Info.plist";
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		8CCBC691132CC419009528C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
+				INFOPLIST_FILE = "Test/Test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8CCBC692132CC419009528C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
+				INFOPLIST_FILE = "Test/Test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CBA8F60132C26790086AA8F /* Build configuration list for PBXProject "InstapaperKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CBA8F77132C26790086AA8F /* Debug */,
+				8CBA8F78132C26790086AA8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CBA8F79132C26790086AA8F /* Build configuration list for PBXNativeTarget "InstapaperKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CBA8F7A132C26790086AA8F /* Debug */,
+				8CBA8F7B132C26790086AA8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CCBC693132CC419009528C3 /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CCBC691132CC419009528C3 /* Debug */,
+				8CCBC692132CC419009528C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CBA8F5D132C26790086AA8F /* Project object */;
+}
