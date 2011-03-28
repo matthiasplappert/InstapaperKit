@@ -738,7 +738,7 @@ static NSString *_OAuthConsumerSecret = nil;
     // Create full URL
     static NSURL *baseURL = nil;
     if (baseURL == nil) {
-        baseURL = [[NSURL alloc] initWithString:@"http://www.instapaper.com"];
+        baseURL = [[NSURL alloc] initWithString:@"https://www.instapaper.com"];
     }
     NSURL *URL = [NSURL URLWithString:path relativeToURL:baseURL];
     if (!URL) {
