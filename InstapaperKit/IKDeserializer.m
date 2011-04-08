@@ -77,15 +77,17 @@
     
     // Parse JSON
     NSArray *JSONArray = [JSONString objectFromJSONString];
-    if (![JSONArray isKindOfClass:[NSArray class]]) {
+    if (![JSONArray isKindOfClass:[NSArray class]] && ![JSONArray isKindOfClass:NSClassFromString(@"JKArray")]) {
         // Invalid JSON
         return nil;
     }
     
     NSMutableArray *result = [NSMutableArray array];
     
-    for (NSDictionary *dict in JSONArray) {
-        if (![dict isKindOfClass:[NSDictionary class]]) {
+    for (NSUInteger i = 0; i < [JSONArray count]; i++) {
+        NSDictionary *dict = [JSONArray objectAtIndex:i];
+        
+        if (![dict isKindOfClass:[NSDictionary class]] && ![dict isKindOfClass:NSClassFromString(@"JKDictionary")]) {
             // Skip
             continue;
         }
