@@ -33,9 +33,9 @@
 		8CCBC6D8132CF3DE009528C3 /* IKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBC6D6132CF3DD009528C3 /* IKUser.m */; };
 		8CCBC6DB132CF4F7009528C3 /* IKDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC6D9132CF4F7009528C3 /* IKDeserializer.h */; };
 		8CCBC6DC132CF4F7009528C3 /* IKDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBC6DA132CF4F7009528C3 /* IKDeserializer.m */; };
-		8CCBC6E0132CFA85009528C3 /* IKBookmark.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC6DE132CFA84009528C3 /* IKBookmark.h */; };
+		8CCBC6E0132CFA85009528C3 /* IKBookmark.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC6DE132CFA84009528C3 /* IKBookmark.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CCBC6E1132CFA85009528C3 /* IKBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBC6DF132CFA84009528C3 /* IKBookmark.m */; };
-		8CCBC6E4132CFA8D009528C3 /* IKFolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC6E2132CFA8D009528C3 /* IKFolder.h */; };
+		8CCBC6E4132CFA8D009528C3 /* IKFolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC6E2132CFA8D009528C3 /* IKFolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CCBC6E5132CFA8D009528C3 /* IKFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBC6E3132CFA8D009528C3 /* IKFolder.m */; };
 		8CCBC6EE132CFE02009528C3 /* IKConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC6EC132CFE00009528C3 /* IKConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CCBC6EF132CFE02009528C3 /* IKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBC6ED132CFE01009528C3 /* IKConstants.m */; };
@@ -269,12 +269,12 @@
 				8CBA8F80132C26880086AA8F /* IKURLConnection.h in Headers */,
 				8CBA8F82132C26880086AA8F /* IKEngine.h in Headers */,
 				8CCBC696132CC4AC009528C3 /* InstapaperKit.h in Headers */,
+				8CCBC6E0132CFA85009528C3 /* IKBookmark.h in Headers */,
 				8CCBC6A5132CE7EA009528C3 /* NSString+IKEncoding.h in Headers */,
+				8CCBC6E4132CFA8D009528C3 /* IKFolder.h in Headers */,
 				8CCBC6AB132CF2E0009528C3 /* NSData+Base64.h in Headers */,
 				8CCBC6D7132CF3DE009528C3 /* IKUser.h in Headers */,
 				8CCBC6DB132CF4F7009528C3 /* IKDeserializer.h in Headers */,
-				8CCBC6E0132CFA85009528C3 /* IKBookmark.h in Headers */,
-				8CCBC6E4132CFA8D009528C3 /* IKFolder.h in Headers */,
 				8CCBC6EE132CFE02009528C3 /* IKConstants.h in Headers */,
 				8C880B1D1333BC1600834805 /* IKURLConnection+Private.h in Headers */,
 				8C209258133F8E1500561607 /* JSONKit.h in Headers */,
