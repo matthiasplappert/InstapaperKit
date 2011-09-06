@@ -151,7 +151,7 @@ static NSString *_OAuthConsumerSecret = nil;
     NSMutableString *have = [NSMutableString string];
     if ([bookmarks count] > 0) {
         for (IKBookmark *bookmark in bookmarks) {
-            [have appendFormat:@"%@", bookmark.bookmarkID];
+            [have appendFormat:@"%ld", (long)bookmark.bookmarkID];
             if (bookmark.hashString) {
                 [have appendFormat:@":%@", bookmark.hashString];
             }
