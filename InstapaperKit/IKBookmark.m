@@ -59,7 +59,7 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"<%@: %@ (%d), URL:(%@)>", NSStringFromClass([self class]),
+    return [NSString stringWithFormat:@"<%@: %@ (%@), URL:(%@)>", NSStringFromClass([self class]),
                                                                   self.title,
                                                                   self.bookmarkID,
                                                                   self.URL];
