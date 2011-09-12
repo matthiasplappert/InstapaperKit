@@ -151,9 +151,9 @@ static NSString *_OAuthConsumerSecret = nil;
     NSMutableString *have = [NSMutableString string];
     if ([bookmarks count] > 0) {
         for (IKBookmark *bookmark in bookmarks) {
-            [have appendFormat:@"%d", bookmark.bookmarkID];
-            if (bookmark.hash) {
-                [have appendFormat:@":%@", bookmark.hash];
+            [have appendFormat:@"%ld", (long)bookmark.bookmarkID];
+            if (bookmark.hashString) {
+                [have appendFormat:@":%@", bookmark.hashString];
             }
             if (bookmark.progressDate && bookmark.progress != -1.0f) {
                 int timestamp = (int)[bookmark.progressDate timeIntervalSince1970];
