@@ -54,7 +54,7 @@ typically request a token as soon as the user enters his username and password.
 
     // Assuming that your class has an instance variable _engine
     _engine = [[IKEngine alloc] initWithDelegate:self];
-    [_engine authTokenForUsername:@"Instapaper username" password:@"shh, this is secret!"];
+    [_engine authTokenForUsername:@"user@domain.com" password:@"shh, secret!" userInfo:nil];
 
 Once the request is complete, your delegate’s `engine:connection:didReceiveAuthToken:andTokenSecret:`
 method will get called:
@@ -63,7 +63,7 @@ method will get called:
     {
         // Assign token and secret
         engine.OAuthToken  = token;
-        engine.OAuthSecret = secret;
+        engine.OAuthTokenSecret = secret;
 
         // Save token and secret in keychain (do not use NSUserDefaults for the secret!)
     }
