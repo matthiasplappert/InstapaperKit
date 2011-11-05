@@ -113,9 +113,9 @@
     NSLog(@"engine %@ connection %@ did verify credentials for user %@", engine, connection, user);
 }
 
-- (void)engine:(IKEngine *)engine connection:(IKURLConnection *)connection didReceiveBookmarks:(NSArray *)bookmarks ofUser:(IKUser *)user
+- (void)engine:(IKEngine *)engine connection:(IKURLConnection *)connection didReceiveBookmarks:(NSArray *)bookmarks ofUser:(IKUser *)user forFolder:(IKFolder *)folder
 {
-    NSLog(@"engine %@ connection %@ did receive bookmarks %@ of user %@", engine, connection, bookmarks, user);
+    NSLog(@"engine %@ connection %@ did receive bookmarks %@ of user %@ for folder %@", engine, connection, bookmarks, user, folder);
 }
 
 - (void)engine:(IKEngine *)engine connection:(IKURLConnection *)connection didUpdateReadProgressOfBookmark:(IKBookmark *)bookmark
