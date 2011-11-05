@@ -38,7 +38,7 @@
 - (void)engine:(IKEngine *)engine connection:(IKURLConnection *)connection didReceiveAuthToken:(NSString *)token andTokenSecret:(NSString *)secret;
 - (void)engine:(IKEngine *)engine connection:(IKURLConnection *)connection didVerifyCredentialsForUser:(IKUser *)user;
 
-- (void)engine:(IKEngine *)engine connection:(IKURLConnection *)connection didReceiveBookmarks:(NSArray *)bookmarks ofUser:(IKUser *)user;
+- (void)engine:(IKEngine *)engine connection:(IKURLConnection *)connection didReceiveBookmarks:(NSArray *)bookmarks ofUser:(IKUser *)user forFolder:(IKFolder *)folder;
 - (void)engine:(IKEngine *)engine connection:(IKURLConnection *)connection didUpdateReadProgressOfBookmark:(IKBookmark *)bookmark;
 - (void)engine:(IKEngine *)engine connection:(IKURLConnection *)connection didAddBookmark:(IKBookmark *)bookmark;
 - (void)engine:(IKEngine *)engine connection:(IKURLConnection *)connection didDeleteBookmarkWithBookmarkID:(NSInteger)bookmarkID;
