@@ -173,7 +173,7 @@ static NSString *_OAuthConsumerSecret = nil;
                                bodyArguments:arguments
                                         type:IKURLConnectionTypeBookmarksList
                                     userInfo:userInfo
-                                     context:nil];
+                                     context:folder];
 }
 
 - (NSString *)updateReadProgressOfBookmark:(IKBookmark *)bookmark toProgress:(CGFloat)progress userInfo:(id)userInfo
@@ -513,9 +513,12 @@ static NSString *_OAuthConsumerSecret = nil;
                     }
                 }
                 
+                //  Retrieve folder ID from connection context
+                IKFolder *folder = (IKFolder *)[connection _context];
+                
                 // Inform delegate
-                if ([self.delegate respondsToSelector:@selector(engine:connection:didReceiveBookmarks:ofUser:)]) {
-                    [self.delegate engine:self connection:connection didReceiveBookmarks:bookmarks ofUser:user];
+                if ([self.delegate respondsToSelector:@selector(engine:connection:didReceiveBookmarks:ofUser:forFolder:)]) {
+                    [self.delegate engine:self connection:connection didReceiveBookmarks:bookmarks ofUser:user forFolder:folder];
                 }
                 break;
             }
