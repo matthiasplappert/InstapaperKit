@@ -32,17 +32,26 @@
 
 + (IKFolder *)unreadFolder
 {
-    return [self folderWithFolderID:IKUnreadFolderID];
+    IKFolder * newFolder = [self folderWithFolderID:IKUnreadFolderID];
+    newFolder.title = @"Read Later";
+    newFolder.position = 0;
+    return newFolder;
 }
 
 + (IKFolder *)starredFolder
 {
-    return [self folderWithFolderID:IKStarredFolderID];
+    IKFolder * newFolder = [self folderWithFolderID:IKStarredFolderID];
+    newFolder.title = @"Liked";
+    newFolder.position = 1;
+    return newFolder;
 }
 
 + (IKFolder *)archiveFolder
 {
-    return [self folderWithFolderID:IKArchiveFolderID];
+    IKFolder * newFolder = [self folderWithFolderID:IKArchiveFolderID];
+    newFolder.title = @"Archive";
+    newFolder.position = 2;
+    return newFolder;
 }
 
 + (IKFolder *)folderWithFolderID:(NSInteger)folderID
