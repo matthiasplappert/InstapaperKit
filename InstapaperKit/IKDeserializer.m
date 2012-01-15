@@ -144,6 +144,12 @@
             [result addObject:folder];
             [folder release];
             
+        } else if ([type isEqualToString:@"meta"]) {
+            NSString *deleteIDsAsString = [self _normalizedObjectForKey:@"delete_ids" inDictionary:dict];
+            if (deleteIDsAsString) {
+                NSArray *deleteIDs = [deleteIDsAsString componentsSeparatedByString:@","];
+                [result addObject:deleteIDs];
+            }
         }
     }
     

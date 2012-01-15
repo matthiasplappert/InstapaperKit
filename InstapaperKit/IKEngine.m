@@ -505,11 +505,14 @@ static NSString *_OAuthConsumerSecret = nil;
                 // Get objects from array
                 IKUser *user = nil;
                 NSMutableArray *bookmarks = [NSMutableArray array];
+                NSArray *deleteIDs = nil;
                 for (id object in result) {
                     if ([object isKindOfClass:[IKUser class]]) {
                         user = (IKUser *)object;
                     } else if ([object isKindOfClass:[IKBookmark class]]) {
                         [bookmarks addObject:object];
+                    } else if ([object isKindOfClass:[NSArray class]]) {
+                        deleteIDs = (NSArray *)object;
                     }
                 }
                 
@@ -517,8 +520,8 @@ static NSString *_OAuthConsumerSecret = nil;
                 IKFolder *folder = (IKFolder *)[connection _context];
                 
                 // Inform delegate
-                if ([self.delegate respondsToSelector:@selector(engine:connection:didReceiveBookmarks:ofUser:forFolder:)]) {
-                    [self.delegate engine:self connection:connection didReceiveBookmarks:bookmarks ofUser:user forFolder:folder];
+                if ([self.delegate respondsToSelector:@selector(engine:connection:didReceiveBookmarks:ofUser:forFolder:withDeleteIDs:)]) {
+                    [self.delegate engine:self connection:connection didReceiveBookmarks:bookmarks ofUser:user forFolder:folder withDeleteIDs:deleteIDs];
                 }
                 break;
             }
