@@ -121,7 +121,7 @@
             bookmark.bookmarkID    = [[self _normalizedObjectForKey:@"bookmark_id" inDictionary:dict] integerValue];
             bookmark.URL           = [self _URLForKey:@"url" inDictionary:dict];
             bookmark.title         = [self _normalizedObjectForKey:@"title" inDictionary:dict];
-            bookmark.descr         = [self _normalizedObjectForKey:@"descr" inDictionary:dict];
+            bookmark.descr         = [self _normalizedObjectForKey:@"description" inDictionary:dict];
             bookmark.date          = [self _dateForKey:@"time" inDictionary:dict];
             bookmark.starred       = [[self _normalizedObjectForKey:@"starred" inDictionary:dict] boolValue];
             bookmark.privateSource = [self _normalizedObjectForKey:@"private_source" inDictionary:dict];
