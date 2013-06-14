@@ -144,7 +144,7 @@ static NSString *_OAuthConsumerSecret = nil;
             folderID = @"archive";
             break;
         default:
-            folderID = [NSString stringWithFormat:@"%d", folder.folderID];
+            folderID = [NSString stringWithFormat:@"%ld", (long)folder.folderID];
             break;
     }
     
@@ -347,7 +347,7 @@ static NSString *_OAuthConsumerSecret = nil;
     NSMutableString *orderString = [NSMutableString string];
     for (NSUInteger i = 0; i < [folders count]; i++) {
         IKFolder *folder = [folders objectAtIndex:i];
-        [orderString appendFormat:@"%d:%d,", folder.folderID, i];
+        [orderString appendFormat:@"%ld:%lu,", (long)folder.folderID, (unsigned long)i];
     }
     
     // Replace last ,

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C209258133F8E1500561607 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C20923E133F8E1500561607 /* JSONKit.h */; };
-		8C209259133F8E1500561607 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20923F133F8E1500561607 /* JSONKit.m */; };
 		8C880B1D1333BC1600834805 /* IKURLConnection+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C880B1B1333BC1400834805 /* IKURLConnection+Private.h */; };
 		8CBA8F6B132C26790086AA8F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBA8F6A132C26790086AA8F /* Cocoa.framework */; };
 		8CBA8F75132C26790086AA8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CBA8F73132C26790086AA8F /* InfoPlist.strings */; };
@@ -56,8 +54,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8C20923E133F8E1500561607 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		8C20923F133F8E1500561607 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		8C880B1B1333BC1400834805 /* IKURLConnection+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IKURLConnection+Private.h"; sourceTree = "<group>"; };
 		8CBA8F67132C26790086AA8F /* InstapaperKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InstapaperKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBA8F6A132C26790086AA8F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -118,15 +114,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8C209217133F8E1500561607 /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				8C20923E133F8E1500561607 /* JSONKit.h */,
-				8C20923F133F8E1500561607 /* JSONKit.m */,
-			);
-			path = JSONKit;
-			sourceTree = "<group>";
-		};
 		8CBA8F5B132C26790086AA8F = {
 			isa = PBXGroup;
 			children = (
@@ -219,7 +206,6 @@
 		8CCBC6A7132CF2E0009528C3 /* Third Party */ = {
 			isa = PBXGroup;
 			children = (
-				8C209217133F8E1500561607 /* JSONKit */,
 				8CCBC6A8132CF2E0009528C3 /* Base64 */,
 			);
 			path = "Third Party";
@@ -277,7 +263,6 @@
 				8CCBC6DB132CF4F7009528C3 /* IKDeserializer.h in Headers */,
 				8CCBC6EE132CFE02009528C3 /* IKConstants.h in Headers */,
 				8C880B1D1333BC1600834805 /* IKURLConnection+Private.h in Headers */,
-				8C209258133F8E1500561607 /* JSONKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +310,9 @@
 /* Begin PBXProject section */
 		8CBA8F5D132C26790086AA8F /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
 			buildConfigurationList = 8CBA8F60132C26790086AA8F /* Build configuration list for PBXProject "InstapaperKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -378,7 +366,6 @@
 				8CCBC6E1132CFA85009528C3 /* IKBookmark.m in Sources */,
 				8CCBC6E5132CFA8D009528C3 /* IKFolder.m in Sources */,
 				8CCBC6EF132CFE02009528C3 /* IKConstants.m in Sources */,
-				8C209259133F8E1500561607 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +419,12 @@
 		8CBA8F77132C26790086AA8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -440,6 +432,9 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
@@ -450,11 +445,19 @@
 		8CBA8F78132C26790086AA8F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
@@ -465,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -484,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -503,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -518,6 +524,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
