@@ -26,9 +26,6 @@
 #import "IKFolder.h"
 #import "IKConstants.h"
 
-#import "JSONKit.h"
-
-
 @interface IKDeserializer ()
 
 + (id)_normalizedObjectForKey:(NSString *)key inDictionary:(NSDictionary *)dict;
@@ -76,7 +73,8 @@
     }
     
     // Parse JSON
-    NSArray *JSONArray = [JSONString objectFromJSONString];
+    NSData *jsonData = [JSONString dataUsingEncoding:NSUTF8StringEncoding];
+    NSArray *JSONArray = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
     if (![JSONArray isKindOfClass:[NSArray class]] && ![JSONArray isKindOfClass:NSClassFromString(@"JKArray")]) {
         // Invalid JSON
         return nil;

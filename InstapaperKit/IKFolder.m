@@ -72,8 +72,8 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"<%@: %@ (%d)>", NSStringFromClass([self class]),
-                                                        self.title, self.folderID];
+    return [NSString stringWithFormat:@"<%@: %@ (%ld)>", NSStringFromClass([self class]),
+                                                        self.title, (long)self.folderID];
 }
 
 #pragma mark -
