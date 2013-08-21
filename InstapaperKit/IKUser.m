@@ -39,9 +39,9 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"<%@: %@ (%d), subscribed:%d>", NSStringFromClass([self class]),
+    return [NSString stringWithFormat:@"<%@: %@ (%lu), subscribed:%d>", NSStringFromClass([self class]),
                                                                        self.username,
-                                                                       self.userID,
+                                                                       (unsigned long)self.userID,
                                                                        self.subscribed];
 }
 
