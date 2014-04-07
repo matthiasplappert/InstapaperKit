@@ -26,7 +26,6 @@
 		8CCBC6A5132CE7EA009528C3 /* NSString+IKEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC6A3132CE7E9009528C3 /* NSString+IKEncoding.h */; };
 		8CCBC6A6132CE7EA009528C3 /* NSString+IKEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBC6A4132CE7E9009528C3 /* NSString+IKEncoding.m */; };
 		8CCBC6AB132CF2E0009528C3 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC6A9132CF2E0009528C3 /* NSData+Base64.h */; };
-		8CCBC6AC132CF2E0009528C3 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBC6AA132CF2E0009528C3 /* NSData+Base64.m */; };
 		8CCBC6D7132CF3DE009528C3 /* IKUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC6D5132CF3DD009528C3 /* IKUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CCBC6D8132CF3DE009528C3 /* IKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBC6D6132CF3DD009528C3 /* IKUser.m */; };
 		8CCBC6DB132CF4F7009528C3 /* IKDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCBC6D9132CF4F7009528C3 /* IKDeserializer.h */; };
@@ -360,7 +359,6 @@
 				8CBA8F81132C26880086AA8F /* IKURLConnection.m in Sources */,
 				8CBA8F83132C26880086AA8F /* IKEngine.m in Sources */,
 				8CCBC6A6132CE7EA009528C3 /* NSString+IKEncoding.m in Sources */,
-				8CCBC6AC132CF2E0009528C3 /* NSData+Base64.m in Sources */,
 				8CCBC6D8132CF3DE009528C3 /* IKUser.m in Sources */,
 				8CCBC6DC132CF4F7009528C3 /* IKDeserializer.m in Sources */,
 				8CCBC6E1132CFA85009528C3 /* IKBookmark.m in Sources */,

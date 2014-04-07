@@ -30,9 +30,6 @@
 #import "IKConstants.h"
 #import "IKURLConnection+Private.h"
 
-#import "NSData+Base64.h"
-
-
 @interface IKEngine ()
 
 - (NSString *)_startConnectionWithAPIPath:(NSString *)path bodyArguments:(NSDictionary *)arguments type:(IKURLConnectionType)type userInfo:(id)userInfo context:(id)context;
@@ -866,7 +863,7 @@ static NSString *_OAuthConsumerSecret = nil;
     
     NSData *HMAC = [[NSData alloc] initWithBytes:cHMAC
                                           length:sizeof(cHMAC)];
-    NSString *hash = [HMAC base64EncodedString];
+    NSString *hash = [HMAC base64EncodedStringWithOptions:0];
     [HMAC release];
     
     return hash;
