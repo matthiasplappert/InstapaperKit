@@ -30,9 +30,6 @@
 #import "IKConstants.h"
 #import "IKURLConnection+Private.h"
 
-#import "NSData+Base64.h"
-
-
 @interface IKEngine ()
 
 - (NSString *)_startConnectionWithAPIPath:(NSString *)path bodyArguments:(NSDictionary *)arguments type:(IKURLConnectionType)type userInfo:(id)userInfo context:(id)context;
