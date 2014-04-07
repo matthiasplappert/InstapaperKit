@@ -863,7 +863,7 @@ static NSString *_OAuthConsumerSecret = nil;
     
     NSData *HMAC = [[NSData alloc] initWithBytes:cHMAC
                                           length:sizeof(cHMAC)];
-    NSString *hash = [HMAC base64EncodedString];
+    NSString *hash = [HMAC base64EncodedStringWithOptions:0];
     [HMAC release];
     
     return hash;
